@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { Button } from "react-papercss-design"
 
+
 const Contents = () => {
 	const router = useRouter();
 
@@ -33,27 +34,50 @@ const Contents = () => {
 			url: '#',
 		},
 		{
-			title: '[untitled] - bea3',
+			title: '[untitled] - 1',
+			url: '#',
+		},
+		{
+			title: '[untitled] - 2',
+			url: '#',
+		},
+		{
+			title: '[untitled] - 3',
+			url: '#',
+		},
+		{
+			title: '[untitled] - 4',
+			url: '#',
+		},
+		{
+			title: '[untitled] - 5',
+			url: '#',
+		},
+		{
+			title: '[untitled] - 6',
 			url: '#',
 		}
 	]
 
-	const randomEffect = () => {
 
-		const effects = ['animate-bounce', 'animate-pulse', 'skew-y-[40deg]', 'skew-x-[40deg]', 'scale-120', 'underline', 'motion-scale-in-[0.5 motion-rotate-in-[-10deg] motion-blur-in-[10px] motion-delay-[0.75s]/rotate motion-delay-[0.75s]/blur']
+
+	const randomEffect = () => {
+		const effects = ['animate-bounce', 'animate-pulse', 'skew-y-[20deg]', 'skew-x-[30deg]',
+			'skew-x-[80deg]', 'motion-rotate-loop-45', 'skew-y-[10deg]',
+			'scale-120', 'animate-pulse', 'animate-bounce', 'motion-translate-y-loop-2', 'motion-scale-loop-110', 'scale-70', 'ml-3', 'mr-3', 'pt-6', 'pb-2'];
 
 		const random = Math.floor(Math.random() * effects.length);
 
-		return effects[random];
+		return `${effects[random]}`;
 	};
 
 	return (
 		<div className='flex flex-col  content-center w-full p-4 items-center gap-2 md:gap-4 py-4 md:py-8'>
-			<div><p className="text-amber-50 text-7xl">contents</p></div>
+			<div><p className="text-amber-50 text-4xl md:text-7xl">contents</p></div>
 
-			<div className="flex border justify-between w-full h-full  pb-10 md:pb-20 px-2 md:px-20 flex-wrap">
+			<div className="flex justify-between w-full h-full  pb-10 md:pb-20 px-2 md:px-20 flex-wrap">
 				{works.map((item) => (
-					<Button className={`!bg-[#ff78bca7] !text-cyan-50 ${randomEffect()} animate-infinite animate-duration-[4000ms] animate-delay-1000 animate-ease-out animate-alternate-reverse animate-fill-both`} key={item.title} onClick={() => router.push(item.url)}>{item.title}</Button>
+					<Button className={`text-xl md:!text-2xl !border-b-orange-300 !bg-[#ff78bca7] !text-cyan-50 ${randomEffect()}`} key={item.title} onClick={() => router.push(item.url)}>{item.title}</Button>
 				))}
 			</div>
 		</div>

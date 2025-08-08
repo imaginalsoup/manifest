@@ -7,7 +7,7 @@ export default {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/modules/**/*.{js,ts,jsx,tsx,mdx}',
 	],
-	plugins: [],
+	plugins: [require('tailwindcss-motion')],
 	theme: {
 		extend: {
 			colors: {

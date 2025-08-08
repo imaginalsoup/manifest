@@ -3,8 +3,6 @@ import { Button } from "react-papercss-design";
 
 const Cover = () => {
 	const router = useRouter();
-
-
 	return (
 		<div className="w-full flex flex-col justify-center dark gap-8 py-0 md:py-10 items-center px-6 md:px-20">
 			<div className="border p-2 w-full bg-[#cb4ed943] md:mx-0 !border-amber-100">
