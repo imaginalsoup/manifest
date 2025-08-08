@@ -2,9 +2,8 @@ import Title from '@/components/Title'
 import WorkLayout from '@/layouts/WorkLayout'
 import React from 'react'
 
-type Props = {}
 
-const page = (props: Props) => {
+const page = () => {
 	return (
 		<WorkLayout>
 			<div className='flex flex-col gap-2'>
