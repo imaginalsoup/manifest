@@ -1,5 +1,6 @@
 'use client';
 
+import GeneralLayout from "@/layouts/GeneralLayout";
 import { useRouter } from "next/navigation";
 import { Button } from "react-papercss-design"
 
@@ -26,16 +27,16 @@ const Contents = () => {
 			url: 'https://ppk80.github.io/of-another-shore/moonmilk.html',
 		},
 		{
-			title: '[untitled] - bea1',
-			url: '#',
+			title: 'mother[2]',
+			url: '/mother[2]',
 		},
 		{
 			title: '[untitled] - bea2',
 			url: '#',
 		},
 		{
-			title: '[untitled] - 1',
-			url: '#',
+			title: 'Vermillion Blues',
+			url: '/vermillion-blues',
 		},
 		{
 			title: '[untitled] - 2',
@@ -72,15 +73,17 @@ const Contents = () => {
 	};
 
 	return (
-		<div className='flex flex-col  content-center w-full p-4 items-center gap-2 md:gap-4 py-4 md:py-8'>
-			<div><p className="text-amber-50 text-4xl md:text-7xl">contents</p></div>
+		<GeneralLayout>
+			<div className='flex flex-col  content-center w-full p-4 items-center gap-2 md:gap-4 py-4 md:py-8'>
+				<div><p className="text-amber-50 text-4xl md:text-7xl">contents</p></div>
 
-			<div className="flex justify-between w-full h-full  pb-10 md:pb-20 px-2 md:px-20 flex-wrap">
-				{works.map((item) => (
-					<Button className={`text-xl md:!text-2xl !border-b-orange-300 !bg-[#ff78bca7] !text-cyan-50 ${randomEffect()}`} key={item.title} onClick={() => router.push(item.url)}>{item.title}</Button>
-				))}
+				<div className="flex justify-between w-full h-full  pb-10 md:pb-20 px-2 md:px-20 flex-wrap">
+					{works.map((item) => (
+						<Button className={`text-xl md:!text-2xl !border-b-orange-300 !bg-[#ff78bca7] !text-cyan-50 ${randomEffect()}`} key={item.title} onClick={() => router.push(item.url)}>{item.title}</Button>
+					))}
+				</div>
 			</div>
-		</div>
+		</GeneralLayout>
 	)
 }
 

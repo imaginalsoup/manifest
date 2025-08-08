@@ -18,7 +18,8 @@ export default {
 				white: '#FCFCFCF0',
 			},
 			fontFamily: {
-				satoshi: 'Satoshi, sans-serif',
+				noto: 'Noto Sans, monospace',
+				// satoshi: 'Satoshi, sans-serif',
 			},
 			screens: {
 				xs: '320px',
