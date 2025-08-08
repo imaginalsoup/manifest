@@ -31,6 +31,11 @@ body {
 
 }
 
+.font {
+		font-family: "Noto Sans Mono", monospace !important;
+		color: rgb(16, 16, 16) !important;
+}
+
 
 .wired-button {
 	@apply bg-amber-50;

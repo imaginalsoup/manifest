@@ -7,8 +7,8 @@ const page = () => {
 	return (
 		<WorkLayout>
 			<div className='flex flex-col gap-2'>
-				<Title heading="mother[2]" />
-				<p className='font-noto font text-black'>You came into my life fully emerged</p>
+				<Title heading="Untitled 2" />
+				<img src='/images/4.png' className='!border-0 mt-6 ' />
 			</div>
 		</WorkLayout>
 	)

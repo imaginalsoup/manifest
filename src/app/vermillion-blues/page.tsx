@@ -7,11 +7,12 @@ import ReactPlayer from 'react-player'
 const page = () => {
 	return (
 		<WorkLayout>
-			<div className='flex flex-col gap-8'>
+			<div className='flex flex-col gap-2'>
 				<Title heading='Vermillion Blues' />
 				<ReactPlayer src='/images/3.mov' style={{ width: '100%', height: 'auto', aspectRatio: '16/9' }}
 					controls={true}
-					playing={true}
+					// playing={true}
+					autoPlay={true}
 				/>
 
 			</div>

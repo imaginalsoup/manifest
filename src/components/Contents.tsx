@@ -31,16 +31,16 @@ const Contents = () => {
 			url: '/mother[2]',
 		},
 		{
-			title: '[untitled] - bea2',
-			url: '#',
+			title: '[Untitled 2]',
+			url: '/untitled-2',
 		},
 		{
-			title: 'Vermillion Blues',
+			title: 'vermillion blues',
 			url: '/vermillion-blues',
 		},
 		{
-			title: '[untitled] - 2',
-			url: '#',
+			title: 'Vicar',
+			url: '/vicar',
 		},
 		{
 			title: '[untitled] - 3',
