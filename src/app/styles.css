@@ -1,0 +1,18 @@
+* {
+	/* border: 1px solid gainsboro; */
+}
+
+wired-card {
+margin: auto;
+padding: 20px;
+background: transparent;
+}
+/* 
+wired-card #overlay svg {
+	color: bisque !important;
+	border: 2px solid red;
+}
+
+wired-card div svg {
+	color: bisque !important;
+} */
