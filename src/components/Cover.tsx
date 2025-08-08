@@ -1,8 +1,6 @@
-
 import { Button } from "react-papercss-design";
 
 const Cover = () => {
-
 	return (
 		<div className="w-full flex flex-col justify-center dark gap-8 py-20" >
 			<div className="border p-2 w-auto bg-[#cb4ed943] md:mx-40 !border-amber-100">
@@ -19,4 +17,4 @@ const Cover = () => {
 		</div >)
 }
 
-export default Cover
+export default Cover;
